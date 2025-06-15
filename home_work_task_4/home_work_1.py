@@ -9,7 +9,7 @@ def get_days_from_today(date:str):
         # Різниця у днях
         days_since = (current_date - users_date).days
         return days_since
-    except ValueError as e:
-        print(f"Invalid date format: {e}")
+    except ValueError as v_e:
+        print(f"Invalid date format: {v_e}")
 
 print(get_days_from_today("2024-06-10"))
